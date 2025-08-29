@@ -1,0 +1,39 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://mysql:3306/paymate_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: paymate
+    password: paymate123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+
+  security:
+    jwt:
+      secret: mySecretKey12345678901234567890123456789012345678901234567890
+      expiration: 86400000 # 24 hours
+
+# Payment Gateway Configuration
+payment:
+  stripe:
+    secret-key: ${STRIPE_SECRET_KEY:sk_test_your_stripe_secret_key}
+    publishable-key: ${STRIPE_PUBLISHABLE_KEY:pk_test_your_stripe_publishable_key}
+  
+  paypal:
+    client-id: ${PAYPAL_CLIENT_ID:your_paypal_client_id}
+    client-secret: ${PAYPAL_CLIENT_SECRET:your_paypal_client_secret}
+    mode: sandbox # sandbox or live
+
+logging:
+  level:
+    com.paymate: DEBUG
+    org.springframework.security: DEBUG
