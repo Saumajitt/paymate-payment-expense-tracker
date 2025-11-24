@@ -21,7 +21,7 @@ It allows users to create groups, add members, split expenses, track balances, a
 
 Below is the high-level architecture diagram showing how the system is organized:
 
-![Architecture Diagram](./assets/paymate-architecture.png)
+![Architecture Diagram](/backend/assets/paymate-architecture.png)
 
 The backend follows a modular structure:
 
