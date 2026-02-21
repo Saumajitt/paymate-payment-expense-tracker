@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/payments")
-@CrossOrigin(origins = "*", maxAge = 3600)
 public class PaymentController {
 
     @Autowired
@@ -21,7 +20,7 @@ public class PaymentController {
 
     @PostMapping("/create-payment-intent")
     public ResponseEntity<?> createPaymentIntent(@Valid @RequestBody PaymentRequest paymentRequest,
-                                               Authentication authentication) {
+            Authentication authentication) {
         try {
             UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
             PaymentResponse response = paymentService.createPaymentIntent(paymentRequest, userPrincipal.getId());
@@ -35,7 +34,7 @@ public class PaymentController {
 
     @PostMapping("/webhook/stripe")
     public ResponseEntity<String> handleStripeWebhook(@RequestBody String payload,
-                                                    @RequestHeader("Stripe-Signature") String sigHeader) {
+            @RequestHeader("Stripe-Signature") String sigHeader) {
         // Handle Stripe webhooks for payment status updates
         try {
             // In a real implementation, you would verify the webhook signature

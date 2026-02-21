@@ -1,0 +1,255 @@
+﻿Application bundle generation failed. [3.053 seconds] - 2026-02-21T14:05:42.383Z
+
+▲ [WARNING] NG8011: Node matches the ".material-icons:not([iconPositionEnd]), mat-icon:not([iconPositionEnd]), [matButtonIcon]:not([iconPositionEnd])" slot of the "MatButton" component, but will not be projected into the specific slot because the surrounding @else has more than one node at its root. To project the node in the right slot, you can:
+System.Management.Automation.RemoteException
+1. Wrap the content of the @else block in an <ng-container/> that matches the ".material-icons:not([iconPositionEnd]), mat-icon:not([iconPositionEnd]), [matButtonIcon]:not([iconPositionEnd])" selector.
+2. Split the content of the @else block across multiple @else blocks such that each one only has a single projectable node at its root.
+3. Remove all content from the @else block, except for the node being projected.
+System.Management.Automation.RemoteException
+This check can be disabled using the `extendedDiagnostics.checks.controlFlowPreventingContentProjection = "suppress" compiler option.` [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/expenses/create-expense/create-expense.component.ts:119:16:
+      119 │                 <span class="material-icons">add_circle</span>
+          ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+
+✘ [ERROR] TS2307: Cannot find module '../../../shared/components/animated-counter.component' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/dashboard/dashboard.component.ts:4:41:
+      4 │ ...ent } from '../../../shared/components/animated-counter.component';
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS2307: Cannot find module '../../../shared/components/status-badge.component' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/dashboard/dashboard.component.ts:5:37:
+      5 │ ...mponent } from '../../../shared/components/status-badge.component';
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS2307: Cannot find module '../../../shared/components/loading-spinner.component' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/dashboard/dashboard.component.ts:6:40:
+      6 │ ...nent } from '../../../shared/components/loading-spinner.component';
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS2307: Cannot find module '../../../core/services/expense.service' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/dashboard/dashboard.component.ts:7:31:
+      7 │ ...t { ExpenseService } from '../../../core/services/expense.service';
+        ╵                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS2307: Cannot find module '../../../core/models/expense.models' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/dashboard/dashboard.component.ts:8:32:
+      8 │ import { ExpenseResponse } from '../../../core/models/expense.models';
+        ╵                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] NG2003: No suitable injection token for parameter 'expenseService' of class 'DashboardComponent'.
+  Consider using the @Inject decorator to specify an injection token. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/dashboard/dashboard.component.ts:334:24:
+      334 │     constructor(private expenseService: ExpenseService) { }
+          ╵                         ~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+  This type does not have a value, so it cannot be used as injection token.
+System.Management.Automation.RemoteException
+    src/app/features/dashboard/dashboard.component.ts:334:40:
+      334 │     constructor(private expenseService: ExpenseService) { }
+          ╵                                         ~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS7006: Parameter 'data' implicitly has an 'any' type. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/dashboard/dashboard.component.ts:338:19:
+      338 │             next: (data) => {
+          ╵                    ~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS2307: Cannot find module '../../../shared/components/status-badge.component' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/expenses/expenses.component.ts:7:37:
+      7 │ ...mponent } from '../../../shared/components/status-badge.component';
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS2307: Cannot find module '../../../shared/components/loading-spinner.component' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/expenses/expenses.component.ts:8:40:
+      8 │ ...nent } from '../../../shared/components/loading-spinner.component';
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS2307: Cannot find module '../../../core/services/expense.service' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/expenses/expenses.component.ts:9:31:
+      9 │ ...t { ExpenseService } from '../../../core/services/expense.service';
+        ╵                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS2307: Cannot find module '../../../core/models/expense.models' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/expenses/expenses.component.ts:10:32:
+      10 │ ...rt { ExpenseResponse } from '../../../core/models/expense.models';
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] NG2003: No suitable injection token for parameter 'expenseService' of class 'ExpensesComponent'.
+  Consider using the @Inject decorator to specify an injection token. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/expenses/expenses.component.ts:336:24:
+      336 │     constructor(private expenseService: ExpenseService) { }
+          ╵                         ~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+  This type does not have a value, so it cannot be used as injection token.
+System.Management.Automation.RemoteException
+    src/app/features/expenses/expenses.component.ts:336:40:
+      336 │     constructor(private expenseService: ExpenseService) { }
+          ╵                                         ~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS7006: Parameter 'data' implicitly has an 'any' type. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/expenses/expenses.component.ts:345:19:
+      345 │             next: (data) => {
+          ╵                    ~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS2307: Cannot find module '../../../core/services/payment.service' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/payments/payments.component.ts:8:31:
+      8 │ ...t { PaymentService } from '../../../core/services/payment.service';
+        ╵                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] NG2003: No suitable injection token for parameter 'paymentService' of class 'PaymentsComponent'.
+  Consider using the @Inject decorator to specify an injection token. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/payments/payments.component.ts:286:24:
+      286 │     constructor(private paymentService: PaymentService) { }
+          ╵                         ~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+  This type does not have a value, so it cannot be used as injection token.
+System.Management.Automation.RemoteException
+    src/app/features/payments/payments.component.ts:286:40:
+      286 │     constructor(private paymentService: PaymentService) { }
+          ╵                                         ~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS7006: Parameter 'response' implicitly has an 'any' type. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/payments/payments.component.ts:303:19:
+      303 │             next: (response) => {
+          ╵                    ~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS7006: Parameter 'err' implicitly has an 'any' type. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/features/payments/payments.component.ts:308:20:
+      308 │             error: (err) => {
+          ╵                     ~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] NG2012: Component imports must be standalone components, directives, pipes, or must be NgModules. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/layout/layout.component.ts:9:28:
+      9 │     imports: [RouterOutlet, SidebarComponent, NavbarComponent],
+        ╵                             ~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] NG2012: Component imports must be standalone components, directives, pipes, or must be NgModules. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/layout/layout.component.ts:9:46:
+      9 │     imports: [RouterOutlet, SidebarComponent, NavbarComponent],
+        ╵                                               ~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS2307: Cannot find module '../../core/services/auth.service' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/layout/navbar.component.ts:3:28:
+      3 │ import { AuthService } from '../../core/services/auth.service';
+        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] NG2003: No suitable injection token for parameter 'authService' of class 'NavbarComponent'.
+  Consider using the @Inject decorator to specify an injection token. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/layout/navbar.component.ts:111:24:
+      111 │     constructor(private authService: AuthService) { }
+          ╵                         ~~~~~~~~~~~
+System.Management.Automation.RemoteException
+  This type does not have a value, so it cannot be used as injection token.
+System.Management.Automation.RemoteException
+    src/app/layout/navbar.component.ts:111:37:
+      111 │     constructor(private authService: AuthService) { }
+          ╵                                      ~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] TS2307: Cannot find module '../../core/services/auth.service' or its corresponding type declarations. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/layout/sidebar.component.ts:4:28:
+      4 │ import { AuthService } from '../../core/services/auth.service';
+        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] NG2003: No suitable injection token for parameter 'authService' of class 'SidebarComponent'.
+  Consider using the @Inject decorator to specify an injection token. [plugin angular-compiler]
+System.Management.Automation.RemoteException
+    src/app/layout/sidebar.component.ts:249:24:
+      249 │     constructor(private authService: AuthService) { }
+          ╵                         ~~~~~~~~~~~
+System.Management.Automation.RemoteException
+  This type does not have a value, so it cannot be used as injection token.
+System.Management.Automation.RemoteException
+    src/app/layout/sidebar.component.ts:249:37:
+      249 │     constructor(private authService: AuthService) { }
+          ╵                                      ~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] Could not resolve "@angular/animations/browser"
+System.Management.Automation.RemoteException
+    node_modules/@angular/platform-browser/fesm2022/animations-async.mjs:37:53:
+      37 │ ....moduleImpl ?? import('@angular/animations/browser').then(m => m);
+         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+  You can mark the path "@angular/animations/browser" as external to exclude it from the bundle, which will remove this error and leave the unresolved path in the bundle. You can also add ".catch()" here to handle this failure at run-time instead of bundle-time.
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] Could not resolve "../../../shared/components/animated-counter.component"
+System.Management.Automation.RemoteException
+    src/app/features/dashboard/dashboard.component.ts:4:41:
+      4 │ ...ent } from '../../../shared/components/animated-counter.component';
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] Could not resolve "../../../shared/components/status-badge.component"
+System.Management.Automation.RemoteException
+    src/app/features/dashboard/dashboard.component.ts:5:37:
+      5 │ ...mponent } from '../../../shared/components/status-badge.component';
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] Could not resolve "../../../shared/components/loading-spinner.component"
+System.Management.Automation.RemoteException
+    src/app/features/dashboard/dashboard.component.ts:6:40:
+      6 │ ...nent } from '../../../shared/components/loading-spinner.component';
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] Could not resolve "../../../shared/components/status-badge.component"
+System.Management.Automation.RemoteException
+    src/app/features/expenses/expenses.component.ts:7:37:
+      7 │ ...mponent } from '../../../shared/components/status-badge.component';
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+System.Management.Automation.RemoteException
+✘ [ERROR] Could not resolve "../../../shared/components/loading-spinner.component"
+System.Management.Automation.RemoteException
+    src/app/features/expenses/expenses.component.ts:8:40:
+      8 │ ...nent } from '../../../shared/components/loading-spinner.component';
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+System.Management.Automation.RemoteException
+

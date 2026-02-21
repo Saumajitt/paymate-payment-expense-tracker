@@ -14,7 +14,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/expenses")
-@CrossOrigin(origins = "*", maxAge = 3600)
 public class ExpenseController {
 
     @Autowired
@@ -22,7 +21,7 @@ public class ExpenseController {
 
     @PostMapping
     public ResponseEntity<?> createExpense(@Valid @RequestBody CreateExpenseRequest request,
-                                         Authentication authentication) {
+            Authentication authentication) {
         try {
             UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
             ExpenseResponse response = expenseService.createExpense(request, userPrincipal.getId());
@@ -47,7 +46,7 @@ public class ExpenseController {
 
     @PostMapping("/{expenseId}/settle")
     public ResponseEntity<?> settleExpense(@PathVariable Long expenseId,
-                                         Authentication authentication) {
+            Authentication authentication) {
         try {
             UserPrincipal userPrincipal = (UserPrincipal) authentication.getPrincipal();
             expenseService.settleExpense(expenseId, userPrincipal.getId());

@@ -1,0 +1,16 @@
+﻿src/app/features/dashboard/dashboard.component.ts(4,42): error TS2307: Cannot find module '../../../shared/components/animated-counter.component' or its corresponding type declarations.
+src/app/features/dashboard/dashboard.component.ts(5,38): error TS2307: Cannot find module '../../../shared/components/status-badge.component' or its corresponding type declarations.
+src/app/features/dashboard/dashboard.component.ts(6,41): error TS2307: Cannot find module '../../../shared/components/loading-spinner.component' or its corresponding type declarations.
+src/app/features/dashboard/dashboard.component.ts(7,32): error TS2307: Cannot find module '../../../core/services/expense.service' or its corresponding type declarations.
+src/app/features/dashboard/dashboard.component.ts(8,33): error TS2307: Cannot find module '../../../core/models/expense.models' or its corresponding type declarations.
+src/app/features/dashboard/dashboard.component.ts(338,20): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/app/features/expenses/expenses.component.ts(7,38): error TS2307: Cannot find module '../../../shared/components/status-badge.component' or its corresponding type declarations.
+src/app/features/expenses/expenses.component.ts(8,41): error TS2307: Cannot find module '../../../shared/components/loading-spinner.component' or its corresponding type declarations.
+src/app/features/expenses/expenses.component.ts(9,32): error TS2307: Cannot find module '../../../core/services/expense.service' or its corresponding type declarations.
+src/app/features/expenses/expenses.component.ts(10,33): error TS2307: Cannot find module '../../../core/models/expense.models' or its corresponding type declarations.
+src/app/features/expenses/expenses.component.ts(345,20): error TS7006: Parameter 'data' implicitly has an 'any' type.
+src/app/features/payments/payments.component.ts(8,32): error TS2307: Cannot find module '../../../core/services/payment.service' or its corresponding type declarations.
+src/app/features/payments/payments.component.ts(303,20): error TS7006: Parameter 'response' implicitly has an 'any' type.
+src/app/features/payments/payments.component.ts(308,21): error TS7006: Parameter 'err' implicitly has an 'any' type.
+src/app/layout/navbar.component.ts(3,29): error TS2307: Cannot find module '../../core/services/auth.service' or its corresponding type declarations.
+src/app/layout/sidebar.component.ts(4,29): error TS2307: Cannot find module '../../core/services/auth.service' or its corresponding type declarations.
